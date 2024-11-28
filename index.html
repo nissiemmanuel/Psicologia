@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicólogo Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar fixed">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="terapia.html">Terapia Online</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+<!-- Sección: Inicio (Bienvenida con imagen de fondo) -->
+<section id="home" class="hero" style="position: relative; background-image: url('assets/hero-bg.png'); background-size: cover; color: white;">
+    <!-- Capa oscura sobre la imagen -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+        <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Bienvenido al Centro de Psicología</h1>
+        <p style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Transformamos vidas con apoyo psicológico profesional. Explora nuestros servicios y mejora tu bienestar emocional.</p>
+        <a href="https://wa.me/50244358707" class="btn btn-whatsapp" style="color: white; text-decoration: none;">Contactar por WhatsApp</a>
+    </div>
+</section>
+
+
+ <!-- Sección: Acerca de la Psicología y sus Beneficios -->
+<section class="psychology-benefits" style="background-color: #f0f8ff; padding: 60px 0;">
+    <div class="container" style="display: flex; align-items: center;">
+        <!-- Texto en el lado izquierdo -->
+        <div style="flex: 1; padding-right: 40px;"> <!-- Aumenté el padding derecho -->
+            <h2 style="color:#003366;">Acerca de la Psicología</h2>
+            <p>La psicología es la ciencia que estudia el comportamiento humano y los procesos mentales. Nos ayuda a comprendemos mejor y a encontrar soluciones efectivas a problemas emocionales y psicológicos.</p>
+            <h3 style="color:#003366;">Beneficios de la Psicología</h3>
+            <ul>
+                <p>Mejora la calidad de vida y el bienestar emocional.</p>
+                <p>Fortalece las relaciones personales y familiares.</p>
+                <p>Ayuda a manejar el estrés, la ansiedad y la depresión.</p>
+                <p>Fomenta el desarrollo personal y profesional.</p>
+            </ul>
+        </div>
+
+          <!-- Imagen en el lado derecho con efecto de zoom al pasar el mouse -->
+          <div style="flex: 1;">
+            <img src="assets/psychology.png" alt="Beneficios de la psicología" class="img-responsive zoom-image" style="max-width: 80%; height: auto;">
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Conoce al Psicólogo -->
+<section class="about" style="background-size: cover; color: white; padding: 60px 0;">
+    <div class="container" style="display: flex; align-items: center;">
+        <!-- Imagen del dueño (psicólogo) en el lado izquierdo con margen derecho -->
+        <div style="flex: 1;">
+            <img src="assets/dueno.png" alt="Beneficios de la psicología" class="img-responsive zoom-image" style="max-width: 80%; height: auto;">
+        </div>
+
+        <!-- Texto justificado en el lado derecho y color negro -->
+        <div style="flex: 2; text-align: justify; color: black;">
+            <h2 style="color:#003366;">Conoce al Psicólogo</h2>
+            <p>Con más de 10 años de experiencia en terapias individuales, familiares y de pareja, ofrecemos soluciones personalizadas para mejorar tu calidad de vida. El compromiso con el bienestar de nuestros pacientes es nuestra prioridad, utilizando métodos basados en evidencias y enfoques empáticos que garantizan un tratamiento adecuado y de alta calidad.</p>
+            <p>Además, el psicólogo se especializa en temas como la ansiedad, depresión, conflictos de pareja, manejo del estrés y desarrollo personal. Cada sesión es un paso hacia la mejora emocional, trabajando conjuntamente con el paciente para alcanzar sus metas y lograr una vida más plena y equilibrada.</p>
+            <p>Si estás buscando apoyo profesional, no dudes en contactarnos. Nuestro equipo está listo para acompañarte en este proceso de crecimiento personal y emocional. ¡Estamos aquí para ayudarte!</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Sección: Precios -->
+    <section class="pricing" style="background-color: #f9f9f9; padding: 60px 0;">
+        <div class="container">
+            <h2>Precios</h2>
+            <p>Ofrecemos sesiones accesibles y adaptadas a tus necesidades. Consulta nuestra lista de precios:</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Consulta Presencial</h3>
+                    <p>Ideal para aquellos que prefieren una interacción cara a cara.</p>
+                    <p class="price">Q700</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Consulta Online</h3>
+                    <p>Comodidad desde tu hogar con la misma calidad de atención.</p>
+                    <p class="price">Q500</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Paquete de 5 Sesiones</h3>
+                    <p>Un paquete económico para un seguimiento continuo.</p>
+                    <p class="price">Q1,000</p>
+                </div>
+            </div>
+            <div class="additional-info">
+                <h4>Descuentos Especiales</h4>
+                <p>Ofrecemos descuentos para estudiantes y personas de la tercera edad. Contáctanos para más detalles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Ubicación -->
+    <section class="location" style="background-color: #eaf4ff; padding: 60px 0;">
+        <div class="container">
+            <h2>Ubicación</h2>
+            <p>Visítanos en nuestras oficinas o agenda una sesión online. Estamos ubicados en el corazón de la ciudad para tu comodidad.</p>
+            <iframe src="https://www.google.com/maps/embed?..." class="map" style="border: 0; width: 100%; height: 400px;"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #003366; color: white; padding: 20px 0;">
+        <div class="container">
+            <p>&copy; 2024 Psicólogo Profesional. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <!-- Enlace a Facebook -->
+                <a href="https://www.facebook.com/tu-perfil-facebook" target="_blank">
+                    <img src="assets/facebook-icon.png" alt="Facebook">
+                </a>
+                <!-- Enlace a Instagram -->
+                <a href="https://www.instagram.com/tu-perfil-instagram" target="_blank">
+                    <img src="assets/instagram-icon.png" alt="Instagram">
+                </a>
+                <!-- Enlace a WhatsApp -->
+                <a href="https://wa.me/50244358707" target="_blank">
+                    <img src="assets/whatsapp-icon.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+

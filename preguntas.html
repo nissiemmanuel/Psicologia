@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Psicólogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar fixed">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="terapia.html">Terapia Online</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección: Preguntas Frecuentes -->
+    <section id="faq" class="faq" style="background-color: #f9f9f9; padding-top: 80px;">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <p>En esta sección responderemos a las dudas más comunes sobre nuestros servicios de psicología. Si no encuentras la respuesta a tu pregunta, no dudes en contactarnos.</p>
+
+            <!-- Pregunta 1 -->
+            <div class="faq-item">
+                <button class="faq-btn">¿Cómo puedo agendar una cita?</button>
+                <div class="faq-answer">
+                    <p>Para agendar una cita, puedes contactarnos directamente a través de nuestro botón de WhatsApp o llamarnos al número proporcionado en la sección de contacto. También puedes usar nuestro calendario interactivo disponible en la página de Terapia Online.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="faq-item">
+                <button class="faq-btn">¿Las consultas online son igual de efectivas que las presenciales?</button>
+                <div class="faq-answer">
+                    <p>Sí, nuestras sesiones online están diseñadas para ofrecer la misma calidad y atención que las consultas presenciales, adaptándonos a tus necesidades y brindándote un ambiente cómodo y seguro para compartir.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="faq-item">
+                <button class="faq-btn">¿Qué debo esperar en la primera consulta?</button>
+                <div class="faq-answer">
+                    <p>La primera consulta es una oportunidad para conocernos, identificar tus necesidades y establecer un plan terapéutico que te ayude a alcanzar tus objetivos. No te preocupes, te haremos sentir cómodo en todo momento.</p>
+                </div>
+            </div>
+
+            <!-- Nueva Pregunta 4 -->
+            <div class="faq-item">
+                <button class="faq-btn">¿Qué tipo de terapia es la más adecuada para mí?</button>
+                <div class="faq-answer">
+                    <p>Dependiendo de tu situación, podemos ofrecerte terapia cognitivo-conductual, terapia familiar, o enfoques personalizados. Durante la consulta inicial, se determinará qué enfoque es el más adecuado según tus necesidades y objetivos.</p>
+                </div>
+            </div>
+
+            <!-- Nueva Pregunta 5 -->
+            <div class="faq-item">
+                <button class="faq-btn">¿Puedo cambiar de horario o cancelar una cita?</button>
+                <div class="faq-answer">
+                    <p>Sí, ofrecemos flexibilidad para cambiar o cancelar citas. Sin embargo, es importante que nos avises con al menos 24 horas de antelación para poder reorganizar el horario y dar espacio a otros pacientes.</p>
+                </div>
+            </div>
+
+            <!-- Nueva Pregunta 6 -->
+            <div class="faq-item">
+                <button class="faq-btn">¿Cuánto tiempo duran las sesiones?</button>
+                <div class="faq-answer">
+                    <p>Las sesiones suelen durar entre 45 y 60 minutos, dependiendo de la modalidad y tipo de terapia. Al final de cada sesión, se puede programar la siguiente consulta o definir los próximos pasos en el proceso terapéutico.</p>
+                </div>
+            </div>
+
+            <!-- Botón de WhatsApp -->
+            <a href="https://wa.me/50244358707" class="btn btn-whatsapp">Contáctanos por WhatsApp</a>
+        </div>
+    </section>
+
+    <footer style="background-color: #003366; color: white; padding: 20px 0;">
+        <div class="container">
+            <p>&copy; 2024 Psicólogo Profesional. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <!-- Enlace a Facebook -->
+                <a href="https://www.facebook.com/tu-perfil-facebook" target="_blank">
+                    <img src="assets/facebook-icon.png" alt="Facebook">
+                </a>
+                <!-- Enlace a Instagram -->
+                <a href="https://www.instagram.com/tu-perfil-instagram" target="_blank">
+                    <img src="assets/instagram-icon.png" alt="Instagram">
+                </a>
+                <!-- Enlace a WhatsApp -->
+                <a href="https://wa.me/50244358707" target="_blank">
+                    <img src="assets/whatsapp-icon.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Script para hacer las preguntas interactivas con animación
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const answer = btn.nextElementSibling;
+
+                if (answer.style.maxHeight) {
+                    // Si ya está abierto, lo cerramos
+                    answer.style.maxHeight = null;
+                    answer.style.opacity = 0;
+                } else {
+                    // Si no está abierto, lo mostramos
+                    answer.style.maxHeight = answer.scrollHeight + "px";  // Establecemos la altura máxima
+                    answer.style.opacity = 1;  // Lo hacemos visible
+                }
+            });
+        });
+    </script>
+</body>
+</html>

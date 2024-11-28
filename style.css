@@ -1,0 +1,435 @@
+/* Configuración General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Menú de navegación */
+.navbar {
+    background-color: #003366;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    background: #d4af37;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Sección Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    padding: 100px 20px 60px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #00509e;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.hero .btn-whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn-whatsapp:hover {
+    background-color: #128c7e;
+}
+
+/* Sección Psicología y Beneficios */
+.psychology-benefits {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.psychology-benefits h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.psychology-benefits h3 {
+    margin-top: 20px;
+    color: #00509e;
+}
+
+.psychology-benefits ul {
+    list-style: circle;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.psychology-benefits ul li {
+    margin: 5px 0;
+}
+
+.psychology-benefits img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+section.about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  /* Asegura que la imagen no se desborde del contenedor */
+}
+
+
+/* Sección Precios */
+.pricing {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.pricing-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    color: #003366;
+}
+
+.pricing-card .price {
+    font-size: 1.5em;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* Sección Ubicación */
+.location {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.location .map {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Contacto */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #eaf4ff;
+}
+
+.contact h2 {
+    color: #003b5c;
+}
+
+.contact-method {
+    margin-top: 40px;
+}
+
+.contact-method h3 {
+    color: #00509e;
+    font-size: 1.5em;
+}
+
+.contact-method p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-form {
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-form h3 {
+    font-size: 1.5em;
+    color: #003b5c;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #00509e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #003b5c;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+footer .social-media a:hover img {
+    transform: scale(1.1);
+}
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo para el acordeón */
+.faq-item {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.faq-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-btn:hover {
+    background-color: #00509e;
+}
+
+.faq-answer {
+    display: block;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+    max-height: 0;  /* Inicialmente la respuesta está oculta */
+    opacity: 0;  /* La respuesta es transparente al principio */
+    overflow: hidden;  /* Evita que se muestre el contenido fuera del área de respuesta */
+    transition: max-height 0.5s ease-out, opacity 0.3s ease-out;  /* Animación para deslizamiento y desvanecimiento */
+}
+
+/* Estilos para las preguntas frecuentes */
+.faq {
+    background-color: #f9f9f9;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.faq h2 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.faq p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.btn-correo{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #526ffe;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-correo:hover {
+    background-color: #0d037ed7;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+footer .social-media a:hover img {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 2em;
+    }
+
+    .faq-item {
+        padding: 5px;
+    }
+
+    .faq-btn {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    .btn-whatsapp {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+ /* Estilo para el efecto de zoom */
+ .zoom-image {
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+.zoom-image:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
