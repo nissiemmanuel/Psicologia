@@ -433,3 +433,95 @@ footer .social-media a:hover img {
 .zoom-image:hover {
     transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
 }
+
+.container {
+    width: 90%; /* Reduce el margen lateral en dispositivos pequeños */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Ajustes para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Cambia el menú a vertical */
+        align-items: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .pricing-grid {
+        flex-direction: column; /* Acomoda los precios en una sola columna */
+    }
+
+    .pricing-card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .faq h2 {
+        font-size: 1.8em;
+    }
+
+    .faq p {
+        font-size: 1em;
+    }
+
+    .btn-whatsapp, .btn-correo {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .pricing-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .btn-whatsapp, .btn-correo {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
